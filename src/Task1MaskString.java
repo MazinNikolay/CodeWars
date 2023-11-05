@@ -1,4 +1,4 @@
-public class Task1 {
+public class Task1MaskString {
     public static void main(String[] args) {
         System.out.println(mask("4141589634"));
         System.out.println(maskArray("4141589634"));

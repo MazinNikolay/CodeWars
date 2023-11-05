@@ -52,12 +52,15 @@ public class Task8PrimeInteger {
         return flag;
     }
 
-    public static boolean isPrimeAlternate(int num){
+    public static boolean isPrimeAlternate(int num) {
         boolean flag;
-        if (num>1) flag=true;
-        else flag=false;
-        for (int i=2;i<=num/i;i++){
-            if (num%i==0) flag=false;
+        if (num > 1) flag = true;
+        else flag = false;
+        for (int i = 2; i <= num / i; i++) {
+            if (num % i == 0) {
+                flag = false;
+                System.out.println("num="+num+" i="+i);
+            }
         }
         return flag;
     }
